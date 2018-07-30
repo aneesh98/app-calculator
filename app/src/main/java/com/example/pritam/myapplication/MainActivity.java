@@ -219,6 +219,7 @@ public class MainActivity extends AppCompatActivity {
                         // There may be more than one digits in number
                         while (i < tokens.length && tokens[i] >= '0' && tokens[i] <= '9')
                             sbuf.append(tokens[i++]);
+                        i--;
                         values.push(Integer.parseInt(sbuf.toString()));
                     }
 
